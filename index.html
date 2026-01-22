@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ana &amp; Carlos — Invitación</title>
+  <meta name="description" content="Invitación digital — desliza para ver detalles y confirmar asistencia (vista previa)." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="dots" id="dots" aria-label="Navegación de secciones" role="navigation"></nav>
+
+    <main id="carousel" class="carousel" role="main" aria-label="Invitación de boda">
+      <!-- HERO -->
+      <section class="slide hero" id="slide-hero" tabindex="0" aria-labelledby="hero-title">
+        <div class="bg-layer" aria-hidden="true"></div>
+        <div class="content">
+          <h1 id="hero-title" class="names">Ana &amp; Carlos</h1>
+          <p class="date">12 de Junio de 2026 — 17:00</p>
+          <p class="venue">Finca La Esperanza</p>
+          <p class="lead">Nos encantaría celebrar este día contigo. Desliza para más información</p>
+          <div class="actions">
+            <button id="open-rsvp" class="btn primary" aria-haspopup="dialog" aria-controls="rsvp-modal">RSVP</button>
+            <a class="btn ghost" href="#slide-details">Detalles</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <section class="slide details" id="slide-details" tabindex="0" aria-labelledby="details-title">
+        <div class="content">
+          <h2 id="details-title">Detalles</h2>
+          <p class="muted">Ceremonia y recepción en Finca La Esperanza. Vestimenta: formal elegante.</p>
+          <ul class="info">
+            <li><strong>Dirección:</strong> Calle Ejemplo 123</li>
+            <li><strong>Hora ceremonia:</strong> 17:00</li>
+            <li><strong>Recepción:</strong> 19:00</li>
+          </ul>
+          <div class="mini-actions">
+            <a class="btn" href="#slide-itinerary">Itinerario</a>
+            <a class="btn" href="#slide-map">Mapa</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ITINERARY -->
+      <section class="slide itinerary" id="slide-itinerary" tabindex="0" aria-labelledby="itinerary-title">
+        <div class="content">
+          <h2 id="itinerary-title">Itinerario</h2>
+          <ol class="timeline">
+            <li><strong>16:30</strong> Llegada y bienvenida</li>
+            <li><strong>17:00</strong> Ceremonia</li>
+            <li><strong>18:30</strong> Cóctel</li>
+            <li><strong>19:30</strong> Cena y fiesta</li>
+          </ol>
+          <div class="mini-actions">
+            <a class="btn" href="#slide-gallery">Galería</a>
+            <a class="btn" href="#slide-gifts">Regalos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="slide map" id="slide-map" tabindex="0" aria-labelledby="map-title">
+        <div class="content">
+          <h2 id="map-title">Cómo llegar</h2>
+          <p class="muted">Toca el mapa para abrir en Google Maps.</p>
+          <a class="map-card" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+            <img src="https://picsum.photos/seed/map/1200/700" alt="Mapa — abrir en Google Maps" loading="lazy">
+            <div class="map-overlay">Abrir mapa</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="slide gallery" id="slide-gallery" tabindex="0" aria-labelledby="gallery-title">
+        <div class="content">
+          <h2 id="gallery-title">Galería</h2>
+          <div class="photos" role="list">
+            <img src="https://picsum.photos/seed/1/900/560" alt="Foto 1" loading="lazy" role="listitem">
+            <img src="https://picsum.photos/seed/2/900/560" alt="Foto 2" loading="lazy" role="listitem">
+            <img src="https://picsum.photos/seed/3/900/560" alt="Foto 3" loading="lazy" role="listitem">
+          </div>
+        </div>
+      </section>
+
+      <!-- GIFTS -->
+      <section class="slide gifts" id="slide-gifts" tabindex="0" aria-labelledby="gifts-title">
+        <div class="content">
+          <h2 id="gifts-title">Regalos</h2>
+          <p class="muted">Si quieres, puedes ver nuestras ideas de regalo o enviar un detalle.</p>
+          <div class="gift-links">
+            <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">Lista 1</a>
+            <a class="card-link" href="#" target="_blank" rel="noopener noreferrer">Lista 2</a>
+          </div>
+          <div class="mini-actions">
+            <a class="btn" href="#slide-hero">Volver arriba</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RSVP Modal (preview only: no storage) -->
+    <div id="rsvp-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="rsvp-title">
+      <div class="modal-card" role="document">
+        <button class="modal-close" id="close-rsvp" aria-label="Cerrar">✕</button>
+        <h3 id="rsvp-title">Confirmar asistencia</h3>
+        <p class="muted">Vista previa: el formulario no envía datos a servidor en esta versión.</p>
+        <form id="rsvp-form" class="form" novalidate>
+          <label for="r-name">Nombre completo</label>
+          <input id="r-name" name="name" type="text" autocomplete="name" required>
+
+          <label for="r-email">Correo (opcional)</label>
+          <input id="r-email" name="email" type="email" autocomplete="email">
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar</button>
+            <button type="button" id="r-cancel" class="btn ghost">Cancelar</button>
+          </div>
+
+          <div id="r-status" role="status" aria-live="polite" class="status" hidden></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Lightbox (simple) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+      <button id="lb-close" class="lb-close" aria-label="Cerrar imagen">✕</button>
+      <img id="lb-img" alt="">
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
