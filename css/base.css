@@ -1,0 +1,37 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+section {
+  padding: var(--section-padding);
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 6vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.muted {
+  color: var(--muted-color);
+  margin-top: 0.5rem;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
