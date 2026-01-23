@@ -1,0 +1,37 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-date {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+}
+
+.hero-names {
+  font-size: clamp(2.5rem, 9vw, 3.2rem);
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.info p {
+  margin-top: 0.5rem;
+}
+
+.rsvp-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 3rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted-color);
+}
