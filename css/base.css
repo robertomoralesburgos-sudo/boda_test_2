@@ -14,26 +14,28 @@ section {
 h1, h2 {
   font-family: var(--font-serif);
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 h2 {
-  font-size: clamp(1.8rem, 6vw, 2.2rem);
-  margin-bottom: 1rem;
+  font-size: var(--fs-h2);
+  margin-bottom: 1.4rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: var(--fs-body);
 }
 
 .muted {
   color: var(--muted-color);
-  margin-top: 0.5rem;
+  font-size: var(--fs-small);
+  margin-top: 0.6rem;
 }
 
 .divider {
-  width: 40px;
+  width: 32px;
   height: 1px;
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.2);
   margin: 0 auto;
 }
 
