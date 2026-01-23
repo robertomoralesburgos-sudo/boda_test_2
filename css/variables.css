@@ -6,5 +6,11 @@
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Inter', sans-serif;
 
+  /* Tipografía */
+  --fs-hero: clamp(2.8rem, 10vw, 3.4rem);
+  --fs-h2: clamp(1.9rem, 6vw, 2.3rem);
+  --fs-body: 1rem;
+  --fs-small: 0.9rem;
+
   --section-padding: 4rem 1.5rem;
 }
