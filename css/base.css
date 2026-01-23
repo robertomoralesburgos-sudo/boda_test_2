@@ -3,6 +3,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-sans);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -34,4 +35,8 @@ p {
   height: 1px;
   background-color: #ccc;
   margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
