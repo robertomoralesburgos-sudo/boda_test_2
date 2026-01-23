@@ -3,35 +3,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .hero-date {
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
+  font-size: var(--fs-small);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 
 .hero-names {
-  font-size: clamp(2.5rem, 9vw, 3.2rem);
+  font-size: var(--fs-hero);
+  font-weight: 600;
 }
 
 .hero-subtitle {
   font-family: var(--font-serif);
   font-style: italic;
+  font-size: 1.1rem;
 }
 
 .info p {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
 }
 
 .rsvp-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
 }
 
 footer {
-  padding: 3rem 1rem;
+  padding: 3.5rem 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: var(--fs-small);
   color: var(--muted-color);
 }
