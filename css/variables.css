@@ -1,16 +1,17 @@
 :root {
-  --bg-color: #f6f2eb;
-  --text-color: #1f1f1f;
-  --muted-color: #7a7a7a;
+  --bg-color: #f7f4ee;
+  --text-color: #111111;
+  --muted-color: #8a8a8a;
+
+  --line-color: rgba(0, 0, 0, 0.35);
 
   --font-serif: 'Cormorant Garamond', serif;
   --font-sans: 'Inter', sans-serif;
 
-  /* Tipografía */
-  --fs-hero: clamp(2.8rem, 10vw, 3.4rem);
-  --fs-h2: clamp(1.9rem, 6vw, 2.3rem);
+  --fs-hero: clamp(2.9rem, 10vw, 3.6rem);
+  --fs-h2: clamp(1.8rem, 6vw, 2.2rem);
   --fs-body: 1rem;
-  --fs-small: 0.9rem;
+  --fs-small: 0.85rem;
 
-  --section-padding: 4rem 1.5rem;
+  --section-padding: 5rem 1.5rem;
 }
