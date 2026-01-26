@@ -33,10 +33,10 @@ p {
 }
 
 .divider {
-  width: 32px;
+  width: 28px;
   height: 1px;
-  background-color: rgba(0,0,0,0.2);
-  margin: 0 auto;
+  background-color: var(--line-color);
+  margin: 3.5rem auto;
 }
 
 html {
