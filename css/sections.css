@@ -59,6 +59,10 @@
   object-fit: cover;
 }
 
+.section-image img {
+  filter: grayscale(80%) contrast(1.05);
+}
+
 footer {
   padding: 3.5rem 1rem;
   text-align: center;
