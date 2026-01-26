@@ -25,12 +25,19 @@
 }
 
 .info p {
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rsvp-icon {
-  font-size: 2.6rem;
-  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.rsvp h2 {
+  margin-bottom: 0.8rem;
 }
 
 footer {
